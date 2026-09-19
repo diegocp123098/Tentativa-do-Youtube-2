@@ -1,0 +1,180 @@
+.head{
+    position: sticky;
+    top: 0;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
+    color: #fff;
+}
+
+.youtube-logo-esquerdo{
+    width: 50px;
+    height: 50px;
+}
+
+.pesquisa-video{
+    width: 250px;
+    height: 22px;
+    border-radius: 10px;
+}
+
+.head_icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    color: black;
+}
+
+.head-perfil{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 10px;
+    i{
+        margin-top: 22px;
+    }
+}
+
+.video-box{
+    width: 350px;
+}
+
+.video-box:hover{
+    padding: 2px;
+    background-color: rgb(141, 141, 141);
+    border-radius: 3px;
+}
+
+.img-video{
+    width: 350px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.video-tittle{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+    margin-left: 2px;
+    margin-top: 2px
+
+}
+
+.video-user{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 30px;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 10px;
+}
+
+.usuario{
+    width: 30px;
+    height: 25px;
+    border-radius: 50px;
+}
+
+.user-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name{
+    font-size: 14px;
+    margin: 0px;
+}
+
+.user-subs{
+    font-size: 12px;
+    margin: 0px;
+    
+}
+
+.subscribe{
+    width: 100px;
+    background-color: rgb(207, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.subscribe:hover{
+    transition-duration: 0.3s;
+    background-color:rgb(83, 0, 0);
+
+}
+
+.overlay{
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 20;
+    inset: 0;
+}
+
+.overlay.aberto{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 30;
+    background-color: rgb(73, 0, 73);
+}
+
+.menu.aberto{
+    transform: translateX(0);
+}
+
+.menu-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-close{
+    width: 30px;
+    height: 30px;
+}
+
+.tags{
+    padding: 20px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 320px 320px 320px;
+    padding-left: 85px;
+    gap: 80px;
+}
+
+
+
+
+body{
+    background-color: rgb(177, 177, 177);
+    margin: 0;
+}
+
