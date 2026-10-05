@@ -1,0 +1,203 @@
+.head{
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
+    color: #fff;
+}
+
+.youtube-logo-esquerdo{
+    width: 50px;
+    height: 50px;
+}
+
+.pesquisa-video{
+    width: 250px;
+    height: 22px;
+    border-radius: 10px;
+}
+
+.head_icons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    color: rgb(255, 0, 0);
+}
+
+.head-perfil{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-right: 10px;
+    i{
+        margin-top: 22px;
+    }
+}
+
+.video-box{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.video-box::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 103%;
+    height: 103%;
+    background-color: rgba(90, 90, 90, 0.671);
+    border-radius: 3px;
+    z-index: -1;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.video-box:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.img-video{
+    width: 350px;
+    height: 220px;
+    border-radius: 10px;
+}
+
+.usuario-video{
+    border-radius: 20px;
+}
+
+.video-tittle{
+    color: rgba(228, 227, 227, 0.959);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+    margin-left: 2px;
+    margin-top: 2px
+
+}
+
+.video-user{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 30px;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    gap: 10px;
+}
+
+.usuario{
+    width: 30px;
+    height: 25px;
+    border-radius: 50px;
+}
+
+.user-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name{
+    font-size: 14px;
+    margin: 0px;
+    color: rgba(228, 227, 227, 0.959);
+}
+
+.user-subs{
+    font-size: 12px;
+    margin: 0px;
+    color: rgba(228, 227, 227, 0.959);
+}
+
+.subscribe{
+    width: 100px;
+    background-color: rgb(207, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.subscribe:hover{
+    transition-duration: 0.3s;
+    background-color:rgb(83, 0, 0);
+
+}
+
+.overlay{
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 20;
+    inset: 0;
+}
+
+.overlay.aberto{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 101;
+    background-color: rgba(253, 253, 253, 0.719);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.menu.aberto{
+    transform: translateX(0);
+}
+
+.menu-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-close{
+    width: 30px;
+    height: 30px;
+}
+
+.tags{
+    padding: 20px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    padding-left: 10px;
+    gap: 60px;
+    width: 1260px;
+}
+
+
+body{
+    background-color: rgb(15, 15, 15);
+    margin: 0;
+}
+
